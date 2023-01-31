@@ -2,18 +2,17 @@
 -- plugins --
 -------------
 
--- packer settings
+-- packer settings --
 require('plugins.packer')
 
--- utilities
+-- utilities --
 require('plugins.telescope') -- fuzzy finder
 require('plugins.nvim-tree') -- file tree
-require('plugins.treesitter') -- tree sitter parser
+require('plugins.treesitter') -- parser
 
--- look/feel
+-- look/feel --
 -- require('plugins.catppuccin')
-require('plugins.kanagawa')
--- require('plugins.oxocarbon')
+require('plugins.kanagawa') -- color scheme
 require('plugins.lualine') -- statusbar
 require('plugins.virt-column')
 require('plugins.indent-blankline')

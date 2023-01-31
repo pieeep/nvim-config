@@ -25,9 +25,8 @@ return require('packer').startup({function(use)
   -- color schemes
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "rebelot/kanagawa.nvim" }
-  use {'nyoom-engineering/oxocarbon.nvim'}
 
-  -- fancy colorcolumn/ indentation
+  -- fancy colorcolumn/indentation
   use { "lukas-reineke/virt-column.nvim" }
   use { "lukas-reineke/indent-blankline.nvim" }
 
@@ -49,7 +48,7 @@ return require('packer').startup({function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- treesitter parser for better syntax highlighting
+  -- parser for better syntax highlighting
   use( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   -- sync packer if newly installed
