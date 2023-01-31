@@ -12,8 +12,8 @@ require('plugins.treesitter') -- tree sitter parser
 
 -- look/feel
 -- require('plugins.catppuccin')
--- require('plugins.kanagawa')
-require('plugins.oxocarbon')
+require('plugins.kanagawa')
+-- require('plugins.oxocarbon')
 require('plugins.lualine') -- statusbar
 require('plugins.virt-column')
 require('plugins.indent-blankline')
