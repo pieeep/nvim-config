@@ -2,7 +2,7 @@
 -- neovide --
 -------------
 
-vim.opt.guifont = { 'JetBrainsMono NF', 'h12' }
+vim.opt.guifont = { 'JetBrainsMonoNL NF', 'h12' }
 vim.g.neovide_scale_factor = 0.8
 
 vim.g.neovide_transparency = 0.85
