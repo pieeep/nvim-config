@@ -55,9 +55,8 @@ vim.keymap.set('n', '<leader>t', ':tabnew<CR>', {noremap = true}) -- new tab
 vim.keymap.set('n', '<leader><Tab>', 'gt', {noremap = true}) -- next tab
 vim.keymap.set('n', '<leader><S-Tab>', 'gT', {noremap = true}) -- previous tab
 
--- open a terminal
-vim.keymap.set('n', '<leader><CR>', ':set nonu nornu | term<CR>', {})
-vim.keymap.set('n', '<leader>s<CR>', ':vs | set nonu nornu | term<CR>', {})
+-- terminal stuff
+vim.keymap.set('n', '<leader><CR>', ':10split | set nonu nornu | term<CR>:setlocal cc=<CR>i', {})
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', {noremap = true})
 
 -- telescope.nvim
