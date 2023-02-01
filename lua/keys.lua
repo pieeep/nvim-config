@@ -13,11 +13,25 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>so', ':so %<CR>')
 
 -- automatically complete quotes/brackets
-vim.keymap.set('i', '"', '""<left>', {noremap = true}) -- "..."
-vim.keymap.set('i', "'", "''<left>", {noremap = true}) -- '...'
-vim.keymap.set('i', '(', '()<left>', {noremap = true}) -- (...)
-vim.keymap.set('i', '{', '{}<left>', {noremap = true}) -- {...}
-vim.keymap.set('i', '[', '[]<left>', {noremap = true}) -- [...]
+local function complete(char, isquote)
+  local result = isquote and char:rep(2)..'<left>' or char
+  local col = vim.fn.col('.')
+  local current_char = vim.fn.getline('.'):sub(col, col)
+  return current_char == char and '<right>' or result
+end
+-- "..."
+vim.keymap.set('i', '"', function() return complete('"', true) end, {expr = true})
+-- '...'
+vim.keymap.set('i', "'", function() return complete("'", true) end, {expr = true})
+-- (...)
+vim.keymap.set('i', '(', '()<left>', {noremap = true})
+vim.keymap.set('i', ')', function() return complete(')') end, {expr = true})
+-- {...}
+vim.keymap.set('i', '{', '{}<left>', {noremap = true})
+vim.keymap.set('i', '}', function() return complete('}') end, {expr = true})
+-- [...]
+vim.keymap.set('i', '[', '[]<left>', {noremap = true})
+vim.keymap.set('i', ']', function() return complete(']') end, {expr = true})
 
 -- visual mode
 vim.keymap.set('n', '<leader>vb', '<C-v>')
