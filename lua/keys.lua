@@ -27,10 +27,12 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", {noremap = true})
 -- replace every instance of word under cursor
 vim.keymap.set('n', '<leader>cw', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- copy to system clipboard
-vim.keymap.set('n', '<leader>y', '"+y', {noremap = true})
-vim.keymap.set('v', '<leader>y', '"+y', {noremap = true})
-vim.keymap.set('n', '<leader>Y', '"+Y', {noremap = true})
+-- copy/paste to/from system clipboard
+vim.keymap.set('n', '<leader>y', '"+y', {})
+vim.keymap.set('v', '<leader>y', '"+y', {})
+vim.keymap.set('n', '<leader>Y', '"+Y', {})
+vim.keymap.set('n', '<leader>p', '"+p', {})
+vim.keymap.set('v', '<leader>p', '"+p', {})
 
 -- move cursor while scrolling
 vim.keymap.set('n', '<C-e>', '<C-e>j', {noremap = true})
