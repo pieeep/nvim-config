@@ -71,6 +71,10 @@ vim.keymap.set('n', '<leader><S-Tab>', 'gT') -- previous tab
 vim.keymap.set('n', '<leader><CR>', ':10sp | term<CR>:setl nonu nornu cc=<CR>i')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 vim.keymap.set('t', '<C-q>', '<C-\\><C-n>:bd!<CR>')
+vim.keymap.set('t', '<C-w>j', '<C-\\><C-n><C-w>j')
+vim.keymap.set('t', '<C-w>k', '<C-\\><C-n><C-w>k')
+vim.keymap.set('t', '<C-w>h', '<C-\\><C-n><C-w>h')
+vim.keymap.set('t', '<C-w>l', '<C-\\><C-n><C-w>l')
 
 -- telescope.nvim
 local builtin = require('telescope.builtin')
