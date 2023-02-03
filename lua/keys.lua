@@ -13,8 +13,8 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>so', ':so %<CR>')
 
 -- automatically complete quotes/brackets
-local function complete(char, isquote)
-  local result = isquote and char:rep(2)..'<left>' or char
+local function complete(char, single)
+  local result = single and char:rep(2)..'<left>' or char
   local col = vim.fn.col('.')
   local current_char = vim.fn.getline('.'):sub(col, col)
   return current_char == char and '<right>' or result
@@ -71,10 +71,7 @@ vim.keymap.set('n', '<leader><S-Tab>', 'gT') -- previous tab
 vim.keymap.set('n', '<leader><CR>', ':10sp | term<CR>:setl nonu nornu cc=<CR>i')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 vim.keymap.set('t', '<C-q>', '<C-\\><C-n>:bd!<CR>')
-vim.keymap.set('t', '<C-w>j', '<C-\\><C-n><C-w>j')
-vim.keymap.set('t', '<C-w>k', '<C-\\><C-n><C-w>k')
-vim.keymap.set('t', '<C-w>h', '<C-\\><C-n><C-w>h')
-vim.keymap.set('t', '<C-w>l', '<C-\\><C-n><C-w>l')
+vim.keymap.set('t', '<C-w>', '<C-\\><C-n><C-w>')
 
 -- telescope.nvim
 local builtin = require('telescope.builtin')
