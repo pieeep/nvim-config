@@ -20,14 +20,14 @@ local function complete(char, single)
   return current_char == char and '<right>' or result
 end
 
-vim.keymap.set('i', '"', function() return complete('"', true) end, {expr = true})
-vim.keymap.set('i', "'", function() return complete("'", true) end, {expr = true})
+vim.keymap.set('i', '"', function() return complete('"', true) end, { expr = true })
+vim.keymap.set('i', "'", function() return complete("'", true) end, { expr = true })
 vim.keymap.set('i', '(', '()<left>')
-vim.keymap.set('i', ')', function() return complete(')') end, {expr = true})
+vim.keymap.set('i', ')', function() return complete(')') end, { expr = true })
 vim.keymap.set('i', '{', '{}<left>')
-vim.keymap.set('i', '}', function() return complete('}') end, {expr = true})
+vim.keymap.set('i', '}', function() return complete('}') end, { expr = true })
 vim.keymap.set('i', '[', '[]<left>')
-vim.keymap.set('i', ']', function() return complete(']') end, {expr = true})
+vim.keymap.set('i', ']', function() return complete(']') end, { expr = true })
 
 -- visual mode
 vim.keymap.set('n', '<leader>vb', '<C-v>')
@@ -45,8 +45,8 @@ vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('v', '<leader>p', '"+p')
 
 -- move cursor while scrolling
-vim.keymap.set('n', '<C-e>', '<C-e>j', {noremap = true})
-vim.keymap.set('n', '<C-y>', '<C-y>k', {noremap = true})
+vim.keymap.set('n', '<C-e>', '<C-e>j')
+vim.keymap.set('n', '<C-y>', '<C-y>k')
 
 -- move inside normal mode
 vim.keymap.set('i', '<C-j>', '<down>')
