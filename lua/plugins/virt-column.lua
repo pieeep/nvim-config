@@ -2,5 +2,5 @@
 -- virt-column --
 -----------------
 
-require('virt-column').setup()
+require('virt-column').setup({ char = '│' })
 
