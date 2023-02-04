@@ -23,12 +23,15 @@ return require('packer').startup({function(use)
   use { 'wbthomason/packer.nvim' }
 
   -- color schemes
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use { "rebelot/kanagawa.nvim" }
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use { 'rebelot/kanagawa.nvim' }
 
   -- fancy colorcolumn/indentation
-  use { "lukas-reineke/virt-column.nvim" }
-  use { "lukas-reineke/indent-blankline.nvim" }
+  use { 'lukas-reineke/virt-column.nvim' }
+  use { 'lukas-reineke/indent-blankline.nvim' }
+
+  -- notification manager
+  use { 'rcarriga/nvim-notify' }
 
   -- statusbar
   use {

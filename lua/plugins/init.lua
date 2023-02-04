@@ -14,6 +14,7 @@ require('plugins.treesitter') -- parser
 -- require('plugins.catppuccin')
 require('plugins.kanagawa') -- color scheme
 require('plugins.lualine') -- statusbar
+require('plugins.nvim-notify')
 require('plugins.virt-column')
 require('plugins.indent-blankline')
 
