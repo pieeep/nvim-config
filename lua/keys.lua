@@ -71,12 +71,15 @@ vim.keymap.set('t', '<C-w>', '<C-\\><C-n><C-w>')
 
 -- telescope.nvim
 local builtin = require('telescope.builtin')
+local extensions = require('telescope').extensions
 vim.keymap.set('n', '<leader>ff', builtin.find_files)
 vim.keymap.set('n', '<leader>fs', builtin.grep_string)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep)
 vim.keymap.set('n', '<leader>ft', builtin.treesitter)
 vim.keymap.set('n', '<leader>fh', builtin.help_tags)
 vim.keymap.set('n', '<leader>fb', builtin.builtin)
+vim.keymap.set('n', '<leader>fr', builtin.resume)
+vim.keymap.set('n', '<leader>fn', extensions.notify.notify)
 
 -- nvim-tree
 vim.keymap.set('n', '<leader>nt', ':NvimTreeToggle<CR>')
