@@ -23,7 +23,6 @@ return require('packer').startup({function(use)
   use { 'wbthomason/packer.nvim' }
 
   -- color schemes
-  use { 'catppuccin/nvim', as = 'catppuccin' }
   use { 'rebelot/kanagawa.nvim' }
 
   -- fancy colorcolumn/indentation

@@ -11,7 +11,6 @@ require('plugins.nvim-tree') -- file tree
 require('plugins.treesitter') -- parser
 
 -- look/feel --
--- require('plugins.catppuccin')
 require('plugins.kanagawa') -- color scheme
 require('plugins.lualine') -- statusbar
 require('plugins.nvim-notify')
