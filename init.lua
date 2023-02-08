@@ -3,6 +3,7 @@
 --------------
 
 require('plugins')
+require('autopair')
 require('keys')
 require('options')
 
