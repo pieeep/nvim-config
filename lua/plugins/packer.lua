@@ -22,7 +22,7 @@ end
 return require('packer').startup({function(use)
   use { 'wbthomason/packer.nvim' }
   use { 'nvim-lua/plenary.nvim' }
-  use { 'nvim-tree/nvim-web-devicons'}
+  use { 'nvim-tree/nvim-web-devicons' }
 
   use { 'rebelot/kanagawa.nvim' } -- color scheme
 
