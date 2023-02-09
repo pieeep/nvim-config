@@ -16,20 +16,20 @@ vim.keymap.set('v', "s'", surround("'"))
 vim.keymap.set('n', "cs'", 'hevb' .. surround("'"))
 
 -- (...)
-vim.keymap.set('v', 's(', surround('(', ')'))
+vim.keymap.set('v', 's(', surround('( ', ' )'))
 vim.keymap.set('v', 's)', surround('(', ')'))
-vim.keymap.set('n', 'cs(', 'hevb' .. surround('(', ')'))
+vim.keymap.set('n', 'cs(', 'hevb' .. surround('( ', ' )'))
 vim.keymap.set('n', 'cs)', 'hevb' .. surround('(', ')'))
 
 -- {...}
-vim.keymap.set('v', 's{', surround('{', '}'))
+vim.keymap.set('v', 's{', surround('{ ', ' }'))
 vim.keymap.set('v', 's}', surround('{', '}'))
-vim.keymap.set('n', 'cs{', 'hevb' .. surround('{', '}'))
+vim.keymap.set('n', 'cs{', 'hevb' .. surround('{ ', ' }'))
 vim.keymap.set('n', 'cs}', 'hevb' .. surround('{', '}'))
 
 -- [...]
-vim.keymap.set('v', 's[', surround('[', ']'))
+vim.keymap.set('v', 's[', surround('[ ', ' ]'))
 vim.keymap.set('v', 's]', surround('[', ']'))
-vim.keymap.set('n', 'cs[', 'hevb' .. surround('[', ']'))
+vim.keymap.set('n', 'cs[', 'hevb' .. surround('[ ', ' ]'))
 vim.keymap.set('n', 'cs]', 'hevb' .. surround('[', ']'))
 
