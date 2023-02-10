@@ -28,6 +28,7 @@ return require('packer').startup({function(use)
 
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.1' } -- fuzzy finder
   use { 'nvim-lualine/lualine.nvim' } -- statusbar
+  use { 'akinsho/bufferline.nvim', tag = "v3.*" }
   use { 'nvim-tree/nvim-tree.lua' } -- file tree
   use { 'rcarriga/nvim-notify' } -- notification manager
   use { 'lukas-reineke/virt-column.nvim' }

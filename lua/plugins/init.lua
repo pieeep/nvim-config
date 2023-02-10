@@ -13,6 +13,7 @@ require('plugins.treesitter') -- parser
 -- look/feel --
 require('plugins.kanagawa') -- color scheme
 require('plugins.lualine') -- statusbar
+require('plugins.bufferline')
 require('plugins.nvim-notify')
 require('plugins.virt-column')
 require('plugins.indent-blankline')
