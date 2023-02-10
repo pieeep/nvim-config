@@ -46,8 +46,8 @@ vim.keymap.set('i', '<C-a>', '<Esc>A')
 
 -- tabs
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>') -- new tab
-vim.keymap.set('n', '<leader><Tab>', 'gt') -- next tab
-vim.keymap.set('n', '<leader><S-Tab>', 'gT') -- previous tab
+vim.keymap.set('n', '<Tab>', 'gt') -- next tab
+vim.keymap.set('n', '<S-Tab>', 'gT') -- previous tab
 
 -- terminal stuff
 vim.keymap.set('n', '<leader><CR>', ':10sp | term<CR>:setl nonu nornu cc=<CR>i')
@@ -63,7 +63,8 @@ vim.keymap.set('n', '<leader>fs', builtin.grep_string)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep)
 vim.keymap.set('n', '<leader>ft', builtin.treesitter)
 vim.keymap.set('n', '<leader>fh', builtin.help_tags)
-vim.keymap.set('n', '<leader>fb', builtin.builtin)
+vim.keymap.set('n', '<leader>fb', builtin.buffers)
+vim.keymap.set('n', '<leader>fa', builtin.builtin)
 vim.keymap.set('n', '<leader>fr', builtin.resume)
 vim.keymap.set('n', '<leader>fn', extensions.notify.notify)
 
