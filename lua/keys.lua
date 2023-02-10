@@ -11,8 +11,6 @@ vim.keymap.set('n', '<leader>ch', ':checkhealth<CR>')
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader><S-q>', ':q!<CR>')
-vim.keymap.set('n', '<leader>b', ':bd<CR>')
-vim.keymap.set('n', '<leader><S-b>', ':bd!<CR>')
 vim.keymap.set('n', '<leader>so', ':so %<CR>')
 
 -- visual mode
@@ -48,6 +46,12 @@ vim.keymap.set('i', '<C-a>', '<Esc>A')
 vim.keymap.set('n', '<leader>t', ':tabnew<CR>') -- new tab
 vim.keymap.set('n', '<Tab>', 'gt') -- next tab
 vim.keymap.set('n', '<S-Tab>', 'gT') -- previous tab
+
+-- buffers
+vim.keymap.set('n', '<C-j>', ':bn<CR>')
+vim.keymap.set('n', '<C-k>', ':bp<CR>')
+vim.keymap.set('n', '<leader>b', ':bd<CR>')
+vim.keymap.set('n', '<leader><S-b>', ':bd!<CR>')
 
 -- terminal stuff
 vim.keymap.set('n', '<leader><CR>', ':10sp | term<CR>:setl nonu nornu cc=<CR>i')
