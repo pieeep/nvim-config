@@ -30,10 +30,10 @@ require('lualine').setup {
       {
         'filename',
         symbols = {
-          modified = '*',
-          readonly = 'ಠ_ಠ',
-          unnamed = '¯\\(ツ)/¯',
-          newfile = '★',
+          modified = '󰧞',
+          readonly = '󰈡',
+          unnamed = '󰡯',
+          newfile = '󰎔',
         }
       },
     },
