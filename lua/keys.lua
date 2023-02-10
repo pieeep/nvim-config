@@ -10,6 +10,9 @@ vim.keymap.set('n', '<leader>ch', ':checkhealth<CR>')
 -- save/quit/source
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
+vim.keymap.set('n', '<leader><S-q>', ':q!<CR>')
+vim.keymap.set('n', '<leader>b', ':bd<CR>')
+vim.keymap.set('n', '<leader><S-b>', ':bd!<CR>')
 vim.keymap.set('n', '<leader>so', ':so %<CR>')
 
 -- visual mode
