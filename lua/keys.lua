@@ -28,10 +28,6 @@ vim.keymap.set('n', '<leader>Y', '"+Y')
 vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('v', '<leader>p', '"+p')
 
--- move cursor while scrolling
-vim.keymap.set('n', '<C-e>', '<C-e>j')
-vim.keymap.set('n', '<C-y>', '<C-y>k')
-
 -- move inside normal mode
 vim.keymap.set('i', '<C-j>', '<down>')
 vim.keymap.set('i', '<C-k>', '<up>')
