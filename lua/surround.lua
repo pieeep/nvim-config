@@ -15,6 +15,10 @@ vim.keymap.set('n', 'cs"', 'viw' .. surround('"'))
 vim.keymap.set('v', "s'", surround("'"))
 vim.keymap.set('n', "cs'", 'viw' .. surround("'"))
 
+-- `...`
+vim.keymap.set('v', "s`", surround("`"))
+vim.keymap.set('n', "cs`", 'viw' .. surround("`"))
+
 -- (...)
 vim.keymap.set('v', 's(', surround('( ', ' )'))
 vim.keymap.set('v', 's)', surround('(', ')'))
