@@ -5,6 +5,7 @@
 require('plugins')
 require('autopair')
 require('surround')
+require('term')
 require('keys')
 require('options')
 
