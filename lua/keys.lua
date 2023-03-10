@@ -49,12 +49,6 @@ vim.keymap.set('n', '<C-k>', ':bp<CR>')
 vim.keymap.set('n', '<leader>b', ':bd<CR>')
 vim.keymap.set('n', '<leader><S-b>', ':bd!<CR>')
 
--- terminal stuff
-vim.keymap.set('n', '<leader><CR>', ':10sp | term<CR>:setl nonu nornu cc=<CR>i')
-vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
-vim.keymap.set('t', '<C-w>', '<C-\\><C-n><C-w>')
-vim.keymap.set('t', '<C-o>', '<C-\\><C-o>')
-
 -- telescope.nvim
 local builtin = require('telescope.builtin')
 local extensions = require('telescope').extensions
