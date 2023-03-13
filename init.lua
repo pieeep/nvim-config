@@ -3,10 +3,10 @@
 --------------
 
 require('plugins')
+require('keys')
 require('autopair')
 require('surround')
 require('term')
-require('keys')
 require('options')
 
 -- neovide
